@@ -17,13 +17,13 @@ A Python script that listens for **Wake-on-LAN (WoL)** packets and automatically
 
 ## BONUS
 
-In a Proxmox Cluster the /etc/pve filesysten is shared across them by default. As a result this will allow you to start VMs/LXCs across all your nodes with a single listener!
+In a Proxmox Cluster the /etc/pve filesystem is shared across them by default. As a result this will allow you to start VMs/LXCs across all your nodes with a single listener!
 
 *This behaviour is confirmed with the listener running on the Master node. Behaviour might be node-specific if the listener is on a slave node. Test it and report back :)*
 
 ## Requirements
 
-- Proxmox VE host (tested on PVE 8)
+- Proxmox VE host (tested on PVE 8 and PVE 9)
 - Python 3.6+
 - Script must be run with permissions that allow reading `/etc/pve/` and running `qm`/`pct`
 
