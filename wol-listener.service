@@ -4,7 +4,7 @@ Description=Wake-on-LAN Listener for Proxmox VMs and LXCs
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 -u /opt/wol-listener.py
+ExecStart=/usr/bin/python3 -u /usr/local/bin/proxmox-wol-listener.py
 StandardOutput=journal
 StandardError=journal
 Restart=always
